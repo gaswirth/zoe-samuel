@@ -1,5 +1,5 @@
 /***
-* RHD Dev: Compiled at 12:26:57 PM on 30-09-2015
+* RHD Dev: Compiled at 7:15:27 PM on 30-03-2016
 ***/
 
 .unselectable {
@@ -9,12 +9,19 @@
   -o-user-select: none;
   user-select: none;
 }
+html,
+body,
+#page {
+  height: auto;
+  min-height: 100% !important;
+}
 html {
   min-width: 48.5625rem;
 }
 #site-navigation-container {
   background: none;
   bottom: 0.8em;
+  margin-bottom: 0;
 }
 #site-navigation {
   list-style: none;
@@ -47,7 +54,7 @@ html {
   background-image: url("../img/about.png");
 }
 #site-navigation li#menu-item-37 {
-  background-image: url("../img/consulting.png");
+  background-image: url("../img/livestyled.png");
 }
 #site-navigation li#menu-item-40 {
   background-image: url("../img/writing.png");
@@ -55,8 +62,8 @@ html {
 #site-navigation li#menu-item-39 {
   background-image: url("../img/news.png");
 }
-#site-navigation li#menu-item-36 {
-  background-image: url("../img/collaborators.png");
+#site-navigation li#menu-item-268 {
+  background-image: url("../img/producing.png");
 }
 #site-navigation li#menu-item-38 {
   background-image: url("../img/contact.png");
@@ -120,13 +127,13 @@ html {
   margin-left: auto;
 }
 #colophon #footer-content {
-  width: 85%;
+  width: 500px;
   max-width: 64em;
   position: relative;
   margin: 0 auto 0 auto;
-  padding: 3.5em 1em 1em 1em;
-  background: url("../img/footer.png") no-repeat;
-  background-size: 100% 100%;
+  padding: 1em 0;
+  border-top: 1px solid #b24b4b;
+  background: none;
   box-shadow: none;
 }
 #footer-widget-area .widget_rhd_mailchimp_widget {
@@ -166,11 +173,6 @@ html {
   }
   #colophon {
     width: 100%;
-  }
-  #colophon #footer-content {
-    padding: 1em 1em 1em;
-    background: #fff;
-    box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.5);
   }
   #colophon #footer-content #footer-widget-area .widget_rhd_mailchimp_widget .rhd_mc_text {
     width: 70%;

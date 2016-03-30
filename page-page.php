@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * The "Page" static page template file.
  *
  * @package WordPress
  * @subpackage rhd
@@ -10,21 +10,33 @@ get_header(); ?>
 
 	<section id="primary" class="site-content fullwidth">
 		<div id="content" role="main">
-			<h1 class="page-title">Page</h1>
-			<?php $page_q = new WP_Query( 'category_name=page' ); ?>
 
-			<?php if ( $page_q->have_posts() ) : ?>
+			<?php if ( have_posts() ) : ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php /* Start the Loop */ ?>
-				<?php while ( $page_q->have_posts() ) : $page_q->the_post(); ?>
+					<?php get_template_part( 'content', 'page' ); ?>
+
+				<?php endwhile; ?>
+			<?php endif; ?>
+
+			<?php
+			$slug = basename( get_permalink( get_the_ID() ) );
+			$args = array(
+				'post_type' => 'post',
+				'category_name' => 'page'
+			);
+			$feed = new WP_Query( $args );
+			?>
+
+			<?php if ( $feed->have_posts() ) : ?>
+				<?php while ( $feed->have_posts() ) : $feed->the_post(); ?>
 
 					<?php get_template_part( 'content' ); ?>
 
-					<?php echo rhd_list_child_pages(); ?>
-
 				<?php endwhile; ?>
-
 			<?php endif; ?>
+
+			<?php rhd_archive_pagination( $feed ); ?>
 
 			</div><!-- #content -->
 		</section><!-- #primary -->

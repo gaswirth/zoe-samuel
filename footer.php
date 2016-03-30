@@ -11,18 +11,18 @@
 ?>
 
 	</main><!-- #main -->
-
-    <footer id="colophon" role="contentinfo">
-       <div id="footer-content">
-	        <?php get_sidebar( 'footer' ); ?>
-	        <div class="site-info">
-				<p>
-					<?php echo '&copy;' . date( 'Y' ); ?> <?php echo bloginfo( 'name' ); ?> <?php echo ( rhd_is_mobile() ) ? '<br>' : '&bull; '; ?>Site by <a href="//roundhouse-designs.com" target="_blank">Roundhouse<img id="rhd-logo-footer" src="//assets.roundhouse-designs.com/images/rhd-black-house.png" alt="Roundhouse Designs">Designs
-	            </p>
-	        </div><!-- .site-info -->
-		</div>
-    </footer><!-- #colophon -->
 </div><!-- #page -->
+
+<footer id="colophon" role="contentinfo">
+   <div id="footer-content">
+        <?php get_sidebar( 'footer' ); ?>
+        <div class="site-info">
+			<p>
+				<?php echo '&copy;' . date( 'Y' ); ?> <?php echo bloginfo( 'name' ); ?> <?php echo ( rhd_is_mobile() ) ? '<br>' : '&bull; '; ?>Site by <a href="//roundhouse-designs.com" target="_blank">Roundhouse<img id="rhd-logo-footer" src="//assets.roundhouse-designs.com/images/rhd-black-house.png" alt="Roundhouse Designs">Designs
+            </p>
+        </div><!-- .site-info -->
+	</div>
+</footer><!-- #colophon -->
 
 <?php wp_footer(); ?>
 </body>

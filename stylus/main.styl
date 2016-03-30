@@ -9,6 +9,7 @@
    ========================================================================== */
 
 html
+	min-height 100%
 	text-shadow 0 0 1px transparent
 	width 100%
 	font-size 16px
@@ -47,8 +48,8 @@ a:hover
 a:active
 a:focus
 	text-decoration underline
-	
-	
+
+
 hr
 	width 80%
 	height .1875rem
@@ -73,7 +74,7 @@ hr
 	box-shadow 0 4px 15px 2px #000
 	background #181105
 	z-index 999
-	
+
 	.main-home-link
 		width 62.5rem
 		max-width 100%
@@ -93,6 +94,7 @@ hr
 	text-align center
 	position relative
 	-sunrise()
+	margin-bottom 1em
 
 
 #site-navigation
@@ -122,10 +124,10 @@ hr
 
 		.sub-menu
 			display none
-			
+
 			li
 				font-size 1em
-				
+
 				&:before
 					content: "- "
 
@@ -142,7 +144,7 @@ hr
 	margin 0 auto
 	position relative
 	box-sizing border-box
-	
+
 
 .entry-date
 	margin-bottom 1em
@@ -150,14 +152,14 @@ hr
 
 #colophon
 	width 100%
-	
+
 	#footer-content
 		width 100%
 		box-sizing border-box
 		padding 1em 1em 1em
 		background white
 		box-shadow 0px 0px 19px 2px rgba(0, 0, 0, 0.5)
-			
+
 	a
 		text-decoration none
 
@@ -177,7 +179,7 @@ hr
 		margin 0 0.05em
 		position relative
 		bottom -0.1em
-		
+
 
 /* ==========================================================================
 	Posts & Pages
@@ -187,7 +189,7 @@ hr
 	margin 1em auto
 	padding-bottom 1em
 	border-bottom 2px solid $dark-rust
-	
+
 	&:last-child
 		border-bottom none
 
@@ -208,7 +210,7 @@ hr
 
 .entry-title
 	font-size 1.7em
-	line-height 
+	line-height
 
 
 .entry-content
@@ -217,26 +219,26 @@ hr
 	p
 		line-height 1.5
 		margin 1em auto
-		
+
 		&:first-child
 			margin-top 0
 
 		&:last-child
 			margin-bottom 0
-			
+
 	h4
 		font-size 1.8em
 		margin 0.25em auto
-	
+
 	iframe
 		height auto
 		max-width 66%
 		margin 1em auto !important
 		display block
-		
+
 		&[src*="youtube"]
 			min-height 25em
-	
+
 	img
 		max-width 100%
 		margin 1em auto
@@ -256,61 +258,57 @@ hr
 
 .commentlist
 	list-style none
-	
+
 
 
 /* ==========================================================================
 	Widget Areas & Sidebars
    ========================================================================== */
 
-#secondary
-	display none
-	
-
 .widget-title-link
 	color inherit !important
 	text-decoration none !important
-	
+
 
 .widget-title-text
 	color inherit
-	
+
 
 #footer-widget-area
 	@extends .clearfix
 	margin-bottom 2em
-	
+
 	.widget_rhd_mailchimp_widget
 		width 92%
 		margin 0 auto
 		position relative
-		
+
 		.widget-title
 			font-size 2.9em
 			line-height 1
 			margin 1rem 0 0.5rem 0
-	
+
 		.rhd_mc_text
 			width 70%
 			float none
 			margin 0 auto
 			text-align center
-	
+
 		.rhd_mc_subscribe
 			width 70%
 			float none
 			margin 1em auto 0 auto
-		
+
 			input
 				width 100%
 				display block
 				border-radius 0
-			
+
 			.rhd_mc_email
 				font-family "Cutive Mono", sans-serif
 				border 1px solid black
 				margin-bottom 1em
-			
+
 			.rhd_mc_submit
 				margin 0.5em auto
 				font-size 1.2em
@@ -318,11 +316,31 @@ hr
 				background $rust
 				-sunrise()
 				text-transform uppercase
-				
+
 				&:active
 					background $dark-rust
-				
+
 
 /* ==========================================================================
-	Extras
+	Projects
    ========================================================================== */
+
+.project-thumbnail
+	img
+		margin 1em auto
+		display block
+
+
+.widget_rhd_projects_list
+	.widget-title
+		font-size 1.8em
+		text-align center
+
+	.project-list
+		.projects
+			list-style none
+			padding-left 0
+			text-align center
+			line-height 1.75
+			font-size 1.3em
+			-sunrise()

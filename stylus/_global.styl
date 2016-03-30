@@ -20,8 +20,8 @@ $post-it = #fff5a4
 
 // Functions
 
--wrapper( $topMargin = false, $bottomMargin = false )
-	width 85%
+-wrapper( $topMargin = false, $bottomMargin = false, $width = 85% )
+	width $width
 	max-width 64em
 	position relative
 
@@ -68,8 +68,8 @@ $post-it = #fff5a4
 	-moz-opacity $val
 	-webkit-opacity $val
 	opacity $val
-	
-	
+
+
 -sunrise()
 	font-family "Waiting for the Sunrise", cursive
 	font-weight normal

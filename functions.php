@@ -387,41 +387,48 @@ add_filter('get_the_excerpt', 'rhd_enhance_excerpts');
 
 /**
  * rhd_archive_pagination function.
- * 
+ *
  * @access public
+ * @param WP_Query $q (default: null)
  * @return void
  */
-function rhd_archive_pagination() {
-	$sep = ( get_previous_posts_link() != '' ) ? '<div class="pag-sep"></div>' : null; ?>
+function rhd_archive_pagination( WP_Query $q = null )
+{
+	$max_page = ( $q ) ? $q->max_num_pages : null;
 
-	<div class="pagination">
-		<?php next_posts_link( '&larr; Older', null ); ?>
-		<?php if ( $sep ) : ?>
-			<div class="pag-sep"></div>
-			<?php previous_posts_link( 'Newer &rarr;', null ); ?>
-		<?php endif; ?>
-	</div> <?php
+	$sep = ( get_previous_posts_link() != '' ) ? '<div class="pag-sep"></div>' : null;
+
+	echo '<nav class="pagination">';
+
+	echo '<span class="pag-next">' . get_next_posts_link( '&larr; Older', $max_page ) . '</span>';
+
+	if ( $sep ) {
+		echo '<div class="pag-sep"></div>';
+	}
+
+	echo '<span class="pag-prev">' . get_previous_posts_link( 'Newer &rarr;' ) . '</span>';
+	echo '</nav>';
 }
 
 
 /**
  * rhd_list_child_pages function.
- * 
+ *
  * @access public
  * @return void
  */
-function rhd_list_child_pages() { 
+function rhd_list_child_pages() {
 
-	global $post; 
-	
+	global $post;
+
 	if ( is_page() && $post->post_parent )
 		$childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->post_parent . '&echo=0' );
 	else
 		$childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->ID . '&echo=0' );
-		
-	if ( $childpages ) {	
+
+	if ( $childpages ) {
 		$pages = '<ul class="child-page-links">' . $childpages . '</ul>';
 	}
-	
+
 	return $pages;
 }

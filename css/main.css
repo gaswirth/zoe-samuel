@@ -1,5 +1,5 @@
 /***
-* RHD Dev: Compiled at 12:26:57 PM on 30-09-2015
+* RHD Dev: Compiled at 7:15:27 PM on 30-03-2016
 ***/
 
 .unselectable {
@@ -198,6 +198,7 @@ img.aligncenter {
    ========================================================================== */
 html,
 body {
+  min-height: 100%;
   text-shadow: 0 0 1px transparent;
   width: 100%;
   font-size: 16px;
@@ -269,6 +270,7 @@ hr {
   position: relative;
   font-family: "Waiting for the Sunrise", cursive;
   font-weight: normal;
+  margin-bottom: 1em;
 }
 #site-navigation {
   list-style: none;
@@ -439,9 +441,6 @@ line-height
 /* ==========================================================================
 	Widget Areas & Sidebars
    ========================================================================== */
-#secondary {
-  display: none;
-}
 .widget-title-link {
   color: inherit !important;
   text-decoration: none !important;
@@ -496,5 +495,22 @@ line-height
   background: #a32a28;
 }
 /* ==========================================================================
-	Extras
+	Projects
    ========================================================================== */
+.project-thumbnail img {
+  margin: 1em auto;
+  display: block;
+}
+.widget_rhd_projects_list .widget-title {
+  font-size: 1.8em;
+  text-align: center;
+}
+.widget_rhd_projects_list .project-list .projects {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  line-height: 1.75;
+  font-size: 1.3em;
+  font-family: "Waiting for the Sunrise", cursive;
+  font-weight: normal;
+}
