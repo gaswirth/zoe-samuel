@@ -1,0 +1,500 @@
+/***
+* RHD Dev: Compiled at 12:26:57 PM on 30-09-2015
+***/
+
+.unselectable {
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  -o-user-select: none;
+  user-select: none;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusableactive,
+.visuallyhidden.focusablefocus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+.clearfix:before,
+#footer-widget-area:before,
+.clearfix:after,
+#footer-widget-area:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after,
+#footer-widget-area:after {
+  clear: both;
+}
+.alignleft {
+  display: inline;
+  float: left;
+}
+.alignright {
+  display: inline;
+  float: right;
+}
+.aligncenter {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+blockquote.alignleft,
+.wp-caption.alignleft,
+img.alignleft {
+  margin: 0.4em 1.6em 1.6em 0;
+}
+blockquote.alignright,
+.wp-caption.alignright,
+img.alignright {
+  margin: 0.4em 0 1.6em 1.6em;
+}
+blockquote.aligncenter,
+.wp-caption.aligncenter,
+img.aligncenter {
+  clear: both;
+  margin-top: 0.4em;
+  margin-bottom: 1.6em;
+}
+.wp-caption.alignleft,
+.wp-caption.alignright,
+.wp-caption.aligncenter {
+  margin-bottom: 1.2em;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media print {
+  *,
+  *before,
+  *after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  avisited {
+    text-decoration: underline;
+  }
+  a[href]after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="#"]after,
+  a[href^="javascript"]after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+.gallery {
+  width: 100%;
+  margin-bottom: 1.6em;
+}
+.gallery-item {
+  display: inline-block;
+  padding: 1.79104477%;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+}
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+.gallery-icon img {
+  margin: 0 auto;
+}
+.gallery-caption {
+  color: #707070;
+  color: rgba(51,51,51,0.7);
+  display: block;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 0.5em 0;
+}
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+  display: none;
+}
+/* ==========================================================================
+	Main Styles
+   ========================================================================== */
+html,
+body {
+  text-shadow: 0 0 1px transparent;
+  width: 100%;
+  font-size: 16px;
+  margin: 0;
+}
+body {
+  background: url("../img/bg.png") repeat;
+  font-family: "PT Serif", monospace;
+}
+body.admin-bar #wpadminbar {
+  position: fixed;
+  top: 0;
+}
+a {
+  outline: 0 !important;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:link {
+  color: #b24b4b;
+}
+a:visited {
+  color: #a32a28;
+}
+a:hover,
+a:active,
+a:focus {
+  text-decoration: underline;
+}
+hr {
+  width: 80%;
+  height: 0.1875rem;
+  background: #000;
+  margin: 2em auto;
+}
+.invisible {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+#page {
+  position: relative;
+}
+#masthead {
+  width: 100%;
+  height: auto;
+  position: relative;
+  box-shadow: 0 4px 15px 2px #000;
+  background: #181105;
+  z-index: 999;
+}
+#masthead .main-home-link {
+  width: 62.5rem;
+  max-width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+#site-title {
+  text-align: center;
+  margin: 0;
+}
+#site-navigation-container {
+  width: 100%;
+  background: #fff5a4;
+  text-align: center;
+  position: relative;
+  font-family: "Waiting for the Sunrise", cursive;
+  font-weight: normal;
+}
+#site-navigation {
+  list-style: none;
+  padding-left: 0;
+  width: 85%;
+  max-width: 64em;
+  position: relative;
+  margin: 0 auto 0 auto;
+}
+#site-navigation li {
+  margin: 0;
+  font-size: 1.4em;
+  background-size: 100% 100%;
+  z-index: 400;
+  overflow-y: hidden;
+  text-align: center;
+}
+#site-navigation li a {
+  text-decoration: none;
+}
+#site-navigation li a:link,
+#site-navigation li a:visited {
+  color: inherit;
+}
+#site-navigation li a:hover,
+#site-navigation li a:active,
+#site-navigation li a:focus {
+  color: inherit;
+}
+#site-navigation li .sub-menu {
+  display: none;
+}
+#site-navigation li .sub-menu li {
+  font-size: 1em;
+}
+#site-navigation li .sub-menu li:before {
+  content: "- ";
+}
+#main {
+  width: 85%;
+  max-width: 64em;
+  position: relative;
+  margin: 0 auto 2em auto;
+  padding: 0 0 2em 0;
+  box-sizing: border-box;
+}
+#primary,
+#secondary {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+}
+.entry-date {
+  margin-bottom: 1em;
+}
+#colophon {
+  width: 100%;
+}
+#colophon #footer-content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1em 1em 1em;
+  background: #fff;
+  box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.5);
+}
+#colophon a {
+  text-decoration: none;
+}
+#colophon .site-info {
+  margin: 0;
+  padding: 1em 0;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 0.9em;
+}
+#colophon .site-info a {
+  color: inherit;
+}
+#colophon #rhd-logo-footer {
+  width: 1.1em;
+  height: 1.1em;
+  margin: 0 0.05em;
+  position: relative;
+  bottom: -0.1em;
+}
+/* ==========================================================================
+	Posts & Pages
+   ========================================================================== */
+.type-post {
+  margin: 1em auto;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #a32a28;
+}
+.type-post:last-child {
+  border-bottom: none;
+}
+.entry-title,
+.page-title,
+.widget-title {
+  font-family: "Waiting for the Sunrise", cursive;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.page-title {
+  font-size: 2.7em;
+  text-align: center;
+  line-height: 1;
+  margin: 0.25em auto 0.5em auto;
+}
+.entry-title {
+  font-size: 1.7em;
+line-height
+}
+.entry-content {
+  width: 100%;
+}
+.entry-content p {
+  line-height: 1.5;
+  margin: 1em auto;
+}
+.entry-content p:first-child {
+  margin-top: 0;
+}
+.entry-content p:last-child {
+  margin-bottom: 0;
+}
+.entry-content h4 {
+  font-size: 1.8em;
+  margin: 0.25em auto;
+}
+.entry-content iframe {
+  height: auto;
+  max-width: 66%;
+  margin: 1em auto !important;
+  display: block;
+}
+.entry-content iframe[src*="youtube"] {
+  min-height: 25em;
+}
+.entry-content img {
+  max-width: 100%;
+  margin: 1em auto;
+  display: block;
+}
+.child-page-links {
+  width: 75%;
+  margin: 1rem auto 0.5rem auto;
+  font-size: 2.3em;
+  list-style: none;
+  padding-left: 0;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  font-family: "Waiting for the Sunrise", cursive;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.commentlist {
+  list-style: none;
+}
+/* ==========================================================================
+	Widget Areas & Sidebars
+   ========================================================================== */
+#secondary {
+  display: none;
+}
+.widget-title-link {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+.widget-title-text {
+  color: inherit;
+}
+#footer-widget-area {
+  margin-bottom: 2em;
+}
+#footer-widget-area .widget_rhd_mailchimp_widget {
+  width: 92%;
+  margin: 0 auto;
+  position: relative;
+}
+#footer-widget-area .widget_rhd_mailchimp_widget .widget-title {
+  font-size: 2.9em;
+  line-height: 1;
+  margin: 1rem 0 0.5rem 0;
+}
+#footer-widget-area .widget_rhd_mailchimp_widget .rhd_mc_text {
+  width: 70%;
+  float: none;
+  margin: 0 auto;
+  text-align: center;
+}
+#footer-widget-area .widget_rhd_mailchimp_widget .rhd_mc_subscribe {
+  width: 70%;
+  float: none;
+  margin: 1em auto 0 auto;
+}
+#footer-widget-area .widget_rhd_mailchimp_widget .rhd_mc_subscribe input {
+  width: 100%;
+  display: block;
+  border-radius: 0;
+}
+#footer-widget-area .widget_rhd_mailchimp_widget .rhd_mc_subscribe .rhd_mc_email {
+  font-family: "Cutive Mono", sans-serif;
+  border: 1px solid #000;
+  margin-bottom: 1em;
+}
+#footer-widget-area .widget_rhd_mailchimp_widget .rhd_mc_subscribe .rhd_mc_submit {
+  margin: 0.5em auto;
+  font-size: 1.2em;
+  color: #fff;
+  background: #b24b4b;
+  font-family: "Waiting for the Sunrise", cursive;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+#footer-widget-area .widget_rhd_mailchimp_widget .rhd_mc_subscribe .rhd_mc_submit:active {
+  background: #a32a28;
+}
+/* ==========================================================================
+	Extras
+   ========================================================================== */

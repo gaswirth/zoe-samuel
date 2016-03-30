@@ -1,0 +1,180 @@
+@require "_global.styl"
+
+
+html
+	min-width 48.5625rem
+
+
+#site-navigation-container
+	background none
+	bottom 0.8em
+	
+
+#site-navigation
+	list-style none
+	padding-left 0
+	-wrapper()
+	-flexbox()
+
+	li
+		height 71.6px
+		margin 0
+		font-size 1.4em
+		background-size 100% 100%
+		z-index 400
+		overflow-y hidden
+		padding 1em 1em 0.5em 1em
+		background-size 100% 100%
+		
+		&#menu-item-35
+			background-image url(../img/about.png)
+			
+		&#menu-item-37
+			background-image url(../img/consulting.png)
+			
+		&#menu-item-40
+			background-image url(../img/writing.png)
+		
+		&#menu-item-39
+			background-image url(../img/news.png)
+		
+		&#menu-item-36
+			background-image url(../img/collaborators.png)
+		
+		&#menu-item-38
+			background-image url(../img/contact.png)
+
+		a
+			text-decoration none
+
+		a:link
+		a:visited
+			color inherit;
+
+		a:hover
+		a:active
+		a:focus
+			color inherit;
+
+		.sub-menu
+			position absolute
+			padding-left 0
+			line-height 1.5
+			margin-top 0.4rem
+			display block
+
+			li
+				height auto
+				display block
+				margin 0
+				background none
+				font-size 1em
+				padding 0
+
+
+.menu-item-has-children
+	position relative
+	
+
+#primary
+	width 62.5%
+	float right
+	
+	&.fullwidth
+		width 100%
+
+
+#secondary
+	width 31.25%
+	display block
+	float left
+	margin 0
+	
+
+.page-title
+	font-size 4em
+
+
+.entry-content
+	img
+		&.alignleft
+			margin 0 1em 0 0
+			float left
+
+		&.alignright
+			margin 0 0 0 1em
+			float right
+			
+		&.aligncenter
+			margin-right auto
+			margin-left auto
+
+
+#colophon
+	#footer-content
+		-wrapper()
+		padding 3.5em 1em 1em 1em
+		background url(../img/footer.png) no-repeat
+		background-size 100% 100%
+		box-shadow none
+		
+
+#footer-widget-area
+	.widget_rhd_mailchimp_widget
+		width 92%
+		
+		.rhd_mc_text
+			width 66%
+			float left
+			text-align left
+			
+		.rhd_mc_subscribe
+			width 25%
+			float right
+			margin-right 5%
+
+
+
+/* ==========================================================================
+	MEDIA QUERIES
+   ========================================================================== */
+
+@media screen and ( max-width 42rem )
+	#primary
+	#secondary
+		width 100%
+		float none
+		margin 1em auto
+		
+		.widget-title
+		.textwidget
+			text-align center
+		
+		.twitter-timeline
+			width 50%
+			display block
+			margin 0 auto
+			
+	#colophon
+		width 100%
+		
+		#footer-content
+			padding 1em 1em 1em
+			background white
+			box-shadow 0px 0px 19px 2px rgba(0, 0, 0, 0.5)
+			
+			#footer-widget-area
+				.widget_rhd_mailchimp_widget				
+					.rhd_mc_text
+						width 70%
+						float none
+						margin 0 auto
+						text-align center
+				
+					.rhd_mc_subscribe
+						width 70%
+						float none
+						margin 1em auto 0 auto
+						
+					.rhd_mc_email
+						margin-bottom 1em
