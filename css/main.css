@@ -1,5 +1,5 @@
 /***
-* RHD Dev: Compiled at 7:15:27 PM on 30-03-2016
+* RHD Dev: Compiled at 3:10:03 PM on 04-05-2016
 ***/
 
 .unselectable {
@@ -306,7 +306,7 @@ hr {
 #site-navigation li .sub-menu li {
   font-size: 1em;
 }
-#site-navigation li .sub-menu li:before {
+#site-navigation li#menu-item-40 .sub-menu li:before {
   content: "- ";
 }
 #main {
@@ -404,7 +404,7 @@ line-height
 }
 .entry-content iframe {
   height: auto;
-  max-width: 66%;
+  max-width: 100%;
   margin: 1em auto !important;
   display: block;
 }

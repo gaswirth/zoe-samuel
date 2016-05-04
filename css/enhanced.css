@@ -1,5 +1,5 @@
 /***
-* RHD Dev: Compiled at 7:15:27 PM on 30-03-2016
+* RHD Dev: Compiled at 3:10:03 PM on 04-05-2016
 ***/
 
 .unselectable {
@@ -52,6 +52,13 @@ html {
 }
 #site-navigation li#menu-item-35 {
   background-image: url("../img/about.png");
+  padding: 1em 2.5em 0.5em;
+}
+#site-navigation li#menu-item-35 .sub-menu li {
+  text-align: center;
+  font-size: 0.85em;
+  position: relative;
+  right: 15%;
 }
 #site-navigation li#menu-item-37 {
   background-image: url("../img/livestyled.png");
